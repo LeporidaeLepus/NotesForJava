@@ -247,3 +247,5 @@ Boolean / Integer / Character / Double / Float / Long / Short / Byte
   Any changes to the array that occur inside the method body **will affect** the original array that was passed as the argument becasue the memory will be changed.
 - Pass by value of primitive data types:  
   The actual value is passed. Changing the value of the local parameter inside the method does **not affect** the value of the variable outside the method.
+
+## Hierarchy
