@@ -248,4 +248,6 @@ Boolean / Integer / Character / Double / Float / Long / Short / Byte
 - Pass by value of primitive data types:  
   The actual value is passed. Changing the value of the local parameter inside the method does **not affect** the value of the variable outside the method.
 
-## Hierarchy
+## Inheritance
+
+### superclass
