@@ -248,6 +248,29 @@ Boolean / Integer / Character / Double / Float / Long / Short / Byte
 - Pass by value of primitive data types:  
   The actual value is passed. Changing the value of the local parameter inside the method does **not affect** the value of the variable outside the method.
 
+&nbsp;
+
 ## Inheritance
 
-### superclass
+### Superclass
+
+**`super`**: this keyword refers to the superclas of the current class in which super appears and can be used in two ways:
+
+1. To call a superclass construcor
+   - a superclass's constructor will not be inheirated in subclasses,  
+   - but can be invoked  
+  `super()`  
+  `super(<parameters>)`
+   - superclass's constructor is always invoked
+     - if a constructor didn't invoke (1) an overloaded constructor or (2) its superclass's constructor, (3) the compiler will puts `super()` as the first statement in constructor automatally.
+    > **constructor chaining**:  
+    > constructing an instance of a class incokes all the superclasses's constructors along the inheritance chain.
+2. To call a superclass method
+
+### Subclass
+
+**Method Overriding**: a subclass modiff the implementation of a method defined in the superclass.
+
+- an instance method can be overridden only if it is accessible
+- if a method defined in a subclass is **private** in its superclass, the two methods are completely unrelated
+- a *static method* can be inherited , but **cannot** be overridden
