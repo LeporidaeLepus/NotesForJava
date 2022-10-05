@@ -285,7 +285,7 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
 > - [number] is the numer representing this object
 >
 > **Special Case:**  
-> 
+>  
 > ```java
 > public String toString()` 
 > ```
