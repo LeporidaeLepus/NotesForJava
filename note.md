@@ -252,6 +252,8 @@ Boolean / Integer / Character / Double / Float / Long / Short / Byte
 
 ## Inheritance
 
+If no inheirtance is specified when a class is defined, the superclass of the class is `Object`.
+
 ### Superclass
 
 **`super`**: this keyword refers to the superclas of the current class in which super appears and can be used in two ways:
