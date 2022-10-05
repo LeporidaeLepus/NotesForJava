@@ -276,3 +276,20 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
 - an instance method can be overridden only if it is accessible
 - if a method defined in a subclass is **private** in its superclass, the two methods are completely unrelated
 - a *static method* can be inherited , but **cannot** be overridden
+
+> ### toString()
+>
+> A default implementation of `toString()` returns a stirng with a format like `[ClassName]@[number]`
+>
+> - [ClassName] is the class name of which the the object is an instance
+> - [number] is the numer representing this object
+>
+> **Special Case:**  
+> 
+> ```java
+> public String toString()` 
+> ```
+>  
+> This method returns the string itself.
+
+## Polymorphism
