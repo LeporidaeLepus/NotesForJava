@@ -285,11 +285,6 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
 > - [number] is the numer representing this object
 >
 > **Special Case:**  
->  
-> ```java
-> public String toString()` 
-> ```
->  
-> This method returns the string itself.
+> Each wrapper class ovrerrides the `toString()` (also `equals()` and `hashCode()`) defined in the Object Class.
 
 ## Polymorphism
