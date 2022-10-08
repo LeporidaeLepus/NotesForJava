@@ -296,3 +296,5 @@ A variable of a supertype can refer to a subtype object.
 An object of a subtype can be used wherever its supertype value is required.  
 
 ### dynamic binding
+
+Suppose `Object o` is an instance of `Class C` which is the most specify class in a chain of inheritance. If `o` invokes a method `m()`, the JVM searches the implemention of this method `m()` through this chain from the most specify class to the modt general class. Once an implement is found, the search stops and the first-found implemention is invoked.
