@@ -117,7 +117,7 @@ While passing arrays to methods is **passing the reference** to methods, the mem
 
 ## Scanner
 
-```(java)
+```java
 Scanner input = new Scanner(System.in);
 DATATYPE variable = input.next();
 DATATYPE variable = input.nextLine();
@@ -141,7 +141,7 @@ DATATYPE variable = input.nextLine();
 - `obj1 == obj2` compares not only the value but also the memory.
 - Using `obj1.equals(obj2)` to campare objects' value.
 
-```(java)
+```java
 String s1 = "Hello";
 String s2 = new String("Hello");
 System.out.println(s1 == s2);       // false
@@ -181,7 +181,7 @@ Common usage:
 2. enable a constructor to invoke another constructor of the same class.
    > e.g.  
    >
-   > ```(java)
+   > ```java
    > public ClassName (int var){
    >    this.ClassName();
    >    this.var = var;
@@ -191,7 +191,7 @@ Common usage:
 
 ### Modifier
 
-private / public / static / final ......
+private / public / protected / static / final / abstract ......
 
 > Note: Data and methods are defaulted as `private`.
 
