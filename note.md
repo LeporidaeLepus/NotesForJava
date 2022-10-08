@@ -288,3 +288,11 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
 > Each wrapper class ovrerrides the `toString()` (also `equals()` and `hashCode()`) defined in the Object Class.
 
 ## Polymorphism
+
+**type**: a class defines a type  
+**subtype**: a type defined by a class's subclass  
+**supertype**: a type defined by a class's superclass  
+A variable of a supertype can refer to a subtype object.  
+An object of a subtype can be used wherever its supertype value is required.  
+
+### dynamic binding
