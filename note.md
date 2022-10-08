@@ -292,17 +292,18 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
 **type**: a class defines a type  
 **subtype**: a type defined by a class's subclass  
 **supertype**: a type defined by a class's superclass  
-A variable of a supertype can refer to a subtype object.  
-An object of a subtype can be used wherever its supertype value is required.  
+
+- A variable of a supertype can refer to a subtype object.  
+- An object of a subtype can be used wherever its supertype value is required.  
 
 ### Dynamic Binding
 
-Suppose `Object o` is an instance of `Class C` which is the most specify class in a chain of inheritance. If `o` invokes a method `m()`, the JVM searches the implemention for the method `m()` along this chain *from the most specify class to the most general class*. Once an implement is found, the search stops and the *first-found* implemention is invoked.
+Suppose `Object o` is an instance of `Class C` which is the most specify class in a chain of inheritance. If `o` invokes a method `m()`, the JVM searches the implemention for the method `m()` along this chain **from the most specify class to the most general class**. Once an implement is found, the search stops and the **first-found** implemention is invoked.
 
 > #### Method Matching v.s. Binding
 >
 > | **Matching** | Dynamic Binding |
 > | ------ | ------|
-> | The *compiler* finds a matching method according to *parameters'* type, number and order *at compilation time*.| A method may be implemented in several classes. *The JVM* dynamically binds the implementation of the method *at runtime.* |
+> | The **compiler** finds a matching method according to **parameters'** type, number and order **at compilation time**.| A method may be implemented in several classes. **The JVM** dynamically binds the implementation of the method **at runtime**. |
 
 ### Casting Object within an inheritance hierachy
