@@ -254,9 +254,9 @@ Boolean / Integer / Character / Double / Float / Long / Short / Byte
 
 If no inheirtance is specified when a class is defined, the superclass of the class is `Object`.
 
-### Superclass
+**Superclass:**  
 
-**`super`**: this keyword refers to the superclas of the current class in which super appears and can be used in two ways:
+The keyword **`super`** refers to the superclas of the current class in which super appears and can be used in two ways:
 
 1. To call a superclass construcor
    - a superclass's constructor will not be inheirated in subclasses,  
@@ -269,23 +269,23 @@ If no inheirtance is specified when a class is defined, the superclass of the cl
     > constructing an instance of a class incokes all the superclasses's constructors along the inheritance chain.
 2. To call a superclass method
 
-### Subclass
+**Subclass:**
 
-**Method Overriding**: a subclass modiff the implementation of a method defined in the superclass.
+`@Overrided`  
+A subclass modiffy the implementation of a method defined in the superclass is called **method overriding**. The method overided is marked with `@Overrided`.  
 
 - an instance method can be overridden only if it is accessible
 - if a method defined in a subclass is **private** in its superclass, the two methods are completely unrelated
 - a *static method* can be inherited , but **cannot** be overridden
 
-> ### toString()
->
+> **toString()**  
 > A default implementation of `toString()` returns a stirng with a format like `[ClassName]@[number]`
 >
 > - [ClassName] is the class name of which the the object is an instance
 > - [number] is the numer representing this object
 >
-> **Special Case:**  
-> Each wrapper class ovrerrides the `toString()` (also `equals()` and `hashCode()`) defined in the Object Class.
+>   **Special Case:**  
+>   Each wrapper class ovrerrides the `toString()` (also `equals()` and `hashCode()`) defined in the Object Class.
 
 ### Polymorphism
 
