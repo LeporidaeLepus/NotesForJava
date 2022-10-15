@@ -307,3 +307,48 @@ Suppose `Object o` is an instance of `Class C` which is the most specify class i
 > | The **compiler** finds a matching method according to **parameters'** type, number and order **at compilation time**.| A method may be implemented in several classes. **The JVM** dynamically binds the implementation of the method **at runtime**. |
 
 ### Casting Object within an inheritance hierachy
+
+```java
+SuperClass o = new Subclass();  //Implicit casting
+SubClass sub = o;   //compiler error
+SubClass sub = (SubClass)o;   //Expicit casting
+```
+
+- Explicit casting must be used when casting an object from a superclass to a subclass, and may not always succeed.
+
+#### The **`instanceof`** Operator
+
+Used to test wehter an obect is an instance of aclass.
+
+```java
+if (object instanceof Class) {}
+```
+
+> **equals()**  
+> This method campares the contents of two objects. 
+>
+> ```java
+> //default implementation: 
+> public boolean equals(Object obj){
+>   return this == obj;
+> }
+> ```
+> 
+> but as mentioned before, each wrapper class ovrerrides the `equals()` method.  
+> One way to overrides the `equals()` method in our own classes:
+>
+> ```java
+> @Overrides
+> public boolean equals(Object o){
+>   if (o instanceof OurClass){
+>      return featureToCampared == ((OurClass)o).featureToCompared;
+>   } 
+>   else
+>     return false;
+> }
+> ```
+
+**`==` v.s. `equals()`**  
+== | equals()
+------ | ------
+used for camparing two prinitive data type calues of for detrming whether two objects have the same reference | intented to test whether two objects have the same references
