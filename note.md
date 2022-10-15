@@ -367,7 +367,7 @@ if (object instanceof Class) {}
 > **`==` v.s. `equals()`**  
 > == | equals()
 > ------ | ------
-> used for camparing two **primitive data type values** of for detrming whether two objects have the **same reference** | intented to test whether two objects have the **same references**
+> used for camparing two **primitive data type values** of for detrming whether two objects have the **same reference** | intented to test whether two objects have the **same contents**
 > stronger | weaker
 
 &nbsp;
