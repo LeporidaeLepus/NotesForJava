@@ -191,9 +191,23 @@ Common usage:
 
 ### Modifier
 
-private / public / protected / static / final / abstract ......
+**private / public / protected / static / final / abstract** ......  
 
 > Note: Data and methods are defaulted as `private`.
+
+**`protector`**:
+
+- Can be applied on data and methods in a class
+- A prtocted data or method in a public class can be accessed by *any class in the same package*
+- or its *subclasses* which are not in the same package.
+
+**`final`**:
+
+Modifiers are used on classes and class members (data and methods), except `final` can also be used on **local variables** in a methods which will be consider as a constant inside a method.
+
+- A `final` class **cannot be extended**
+- A `final` method **cannot be overriden** by its subclasses
+- A `final` variable is a constant
 
 #### Static
 
@@ -276,7 +290,9 @@ A subclass modiffy the implementation of a method defined in the superclass is c
 
 - an instance method can be overridden only if it is accessible
 - if a method defined in a subclass is **private** in its superclass, the two methods are completely unrelated
-- a *static method* can be inherited , but **cannot** be overridden
+- a **static method** can be inherited , but **cannot** be overridden
+- a subclass cannot weaken the accessibility of a method defined in the superclass
+  - e.g. if a method is defined as `public` in the superclass, it must be defined `public` in the subclass.
 
 > **toString()**  
 > A default implementation of `toString()` returns a stirng with a format like `[ClassName]@[number]`
@@ -325,7 +341,7 @@ if (object instanceof Class) {}
 ```
 
 > **equals()**  
-> This method campares the contents of two objects. 
+> This method campares the contents of two objects.
 >
 > ```java
 > //default implementation: 
@@ -333,7 +349,7 @@ if (object instanceof Class) {}
 >   return this == obj;
 > }
 > ```
-> 
+>
 > but as mentioned before, each wrapper class ovrerrides the `equals()` method.  
 > One way to overrides the `equals()` method in our own classes:
 >
@@ -351,4 +367,9 @@ if (object instanceof Class) {}
 **`==` v.s. `equals()`**  
 == | equals()
 ------ | ------
-used for camparing two prinitive data type calues of for detrming whether two objects have the same reference | intented to test whether two objects have the same references
+used for camparing two **primitive data type values** of for detrming whether two objects have the **same reference** | intented to test whether two objects have the **same references**
+stronger | weaker
+
+&nbsp;
+
+## Exception Handling
