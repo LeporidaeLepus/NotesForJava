@@ -363,11 +363,11 @@ if (object instanceof Class) {}
 >     return false;
 > }
 > ```
-> 
+>
 > **`==` v.s. `equals()`**  
 > == | equals()
 > ------ | ------
-> used for camparing two **primitive data type values** of for detrming whether two objects have the **same reference** | intented to test whether two objects have the **same contents**
+> used for comparing two **primitive data type values** of for determing whether two objects have the **same reference** | intented to test whether two objects have the **same contents**
 > stronger | weaker
 
 &nbsp;
