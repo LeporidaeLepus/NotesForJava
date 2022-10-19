@@ -171,6 +171,7 @@ Conversion String <-> numbers:
 
 - Data field
 - Constructor
+  - **no-arg constructor** is a default constructor and only provided automatically *if no constructors are explicitly defined in the class.*
 - Methods
 
 ### `this` Keyword
@@ -203,7 +204,7 @@ Common usage:
 
 **`final`**:
 
-Modifiers are used on classes and class members (data and methods), except `final` can also be used on **local variables** in a methods which will be consider as a constant inside a method.
+Modifiers are used on classes and class members (data and methods), except `final` can also be used on **local variables in a methods** which will be consider as a constant inside a method.
 
 - A `final` class **cannot be extended**
 - A `final` method **cannot be overriden** by its subclasses
