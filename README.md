@@ -2,6 +2,8 @@
 
 This repository contains a Markdown file named *node.md* that records the notes I took when learning Java.
 
-To read the notes, find the file in the repository or click **[here](note.md)**.
+**[Here](note.md)** is the note.
+
+**[Here](appendix.md)** is an Appendix about Classes and methods that are frequently used.
 
 **NOTE:** This repository is still in building.
